@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Calculate</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="Calculate.css">
+    
+     <!-- Latest compiled and minified CSS -->
+     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+     <!-- jQuery library -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+     <!-- Latest compiled JavaScript -->
+     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <script src="Calculate.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#">Devalla Vamsi</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="Home.html">Home</a></li>
+        <li class="active"><a href="Calculate.html">Calulate BMI</a></li> 
+        <li><a href="ContactUs.html">Contact Us</a></li> 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li> <a href="https://www.facebook.com/devallavamsi" target="-blank"><span ><img src="fb.png" alt="facebook Social Link"></span></a></li>
+        <li> <a href="https://www.linkedin.com/in/vamsi-devalla-236b1544?trk=hp-identity-name" target="-blank"><span ><img src="linkedin.png" alt="Linkedin Social Link"></span></a></li>
+        <li> <a href="https://github.com/DevallaVamsi" target="-blank"><span ><img src="GitHub-Mark.png" alt="GitHub Social Link"></span></a></li>
+        <li> <a href="https://bitbucket.org/DevallaVamsi/" target="-blank"><span ><img src="BB-Mark.png" alt="bitbucket Social Link"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <h1>BMI Calculator</h1>
+  <div class="row"> 
+  <div class="col-md-3">
+  </div>
+  <div class="col-md-6">
+  <form>
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email">
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox">Do you want us to mail your BMI details</label>
+  </div>
+
+  <div class="form-group">
+  <label for="Gender">Gender:</label>
+   <label class="radio-inline"><input type="radio" name="optradio">Male</label>
+   <label class="radio-inline"><input type="radio" name="optradio">Female</label>
+   <label class="radio-inline"><input type="radio" name="optradio">Others</label>
+   </div>
+    
+   <div class="form-group">
+       <label for="bday">Date Of Birth:</label>
+       <input type="date" name="bday"><br>
+   </div>
+
+   <div class="form-group">
+       <label for="Weight"> Weight in LBS:</label>
+       <input type="number" class="form-control" id="weight">
+   </div>
+
+   <div class="form-group">
+       <label for="Height">Height In Inches:</label>
+       <input type="number" class="form-control" id="height" onblur='myfunction();'>
+   </div>
+  <button  type="button"  class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Calculate</button>
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>Your BMI Is: <span id="bmi"></span></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button"  class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+</form>
+</div>
+<div class="col-md-3">
+</div>
+</body>
+</html>
